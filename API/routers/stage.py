@@ -1,10 +1,11 @@
 from fastapi import APIRouter, Header
-from databases.databases import "results" o "db"?
+from databases.databases import db
 from bson import json_util
 from json import loads
 
 
 router = APIRouter()
+results = db.Results
 
 @router.get("/stage")
 def get_stages():
