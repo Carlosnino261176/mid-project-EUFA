@@ -5,7 +5,7 @@ from json import loads
 
 
 router = APIRouter()
-results = db.Results
+results=db.Results
 
 @router.get("/stage")
 def get_stages():

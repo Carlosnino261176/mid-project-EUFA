@@ -3,5 +3,5 @@ from dotenv import load_dotenv
 import os
 load_dotenv()
 
-client = MongoClient(os.getenv("URL"))
+client = MongoClient(os.getenv("url"))
 db = client.get_database("mid-proyect-EUFA")
